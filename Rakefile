@@ -12,6 +12,7 @@ require 'time'
 require 'compact_index'
 
 require 'bundler_api/cache'
+require 'bundler_api/console'
 require 'bundler_api/update/consumer_pool'
 require 'bundler_api/update/job'
 require 'bundler_api/update/yank_job'
@@ -247,3 +248,9 @@ task :purge_cdn do
   cdn.purge_path("/versions")
   cdn.purge_key("info/*")
 end
+
+desc "Start console"
+task :console do
+  BundlerApi::Console.start
+end
+
