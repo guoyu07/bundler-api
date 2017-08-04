@@ -1,0 +1,3 @@
+#!/bin/sh
+cron
+/var/www/bundler-api/script/web

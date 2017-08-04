@@ -9,6 +9,7 @@ RUN bundle install --deployment
 VOLUME /var/www/bundler-api/log
 
 ADD crontab /etc/cron.d/bundler-api-update
+RUN chmod 0644 /etc/cron.d/bundler-api-update
 
 EXPOSE 5000
-ENTRYPOINT ["/var/www/bundler-api/script/web"]
+ENTRYPOINT ["/var/www/bundler-api/bin/entrypoint"]
