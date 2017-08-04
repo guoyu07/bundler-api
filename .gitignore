@@ -3,7 +3,6 @@
 *.sassc
 .rspec
 .sass-cache/
-bin/
 .bundle/
 coverage/
 db/*.sqlite3

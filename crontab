@@ -1,0 +1,1 @@
+*/1 * * * * cd /var/www/bundler-api && /bin/bash -l -c /var/www/bundler-api/bin/update >> /var/www/bundler-api/log/update-bundler-api.log 2>&1

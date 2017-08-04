@@ -1,0 +1,9 @@
+#!/bin/sh
+count=`ps aux | grep "rake update\[5\]" | wc -l`
+# echo "running mirror process count: ${count}"
+if [ ${count} -lt 1 ] ; then
+  echo "Database sync start at $(date)"
+  bundle exec rake update[5]
+  echo
+  echo "End at $(date)"
+fi
