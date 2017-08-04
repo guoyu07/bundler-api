@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 # source "https://bundler-api-staging.herokuapp.com"
 
-ruby File.read(File.expand_path('../.ruby-version', __FILE__)).strip
+# ruby File.read(File.expand_path('../.ruby-version', __FILE__)).strip
 
 git_source(:github) do |repo|
   repo = "#{repo}/#{repo}" unless repo.include?("/")

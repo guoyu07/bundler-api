@@ -33,7 +33,7 @@ GEM
       thor (~> 0.19.1)
     get_process_mem (0.2.0)
     hitimes (1.2.3)
-    json (1.8.3)
+    json (2.1.0)
     librato-metrics (1.6.0)
       aggregate (~> 0.2.2)
       faraday (~> 0.7)
@@ -130,8 +130,5 @@ DEPENDENCIES
   sequel_pg
   sinatra
 
-RUBY VERSION
-   ruby 2.3.1p112
-
 BUNDLED WITH
-   1.13.2
+   1.14.6
